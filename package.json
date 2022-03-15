@@ -1,0 +1,35 @@
+{
+  "name": "tech-blog",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3",
+    "express-session": "^1.17.2",
+    "mysql2": "^2.3.3",
+    "sequelize": "^6.17.0"
+  },
+  "devDependencies": {
+    "jest": "^27.5.1",
+    "nodemon": "^2.0.15"
+  },
+  "scripts": {
+    "test": "jest",
+	"start": "node server",
+	"dev": "nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Moses-Ian/tech-blog.git"
+  },
+  "keywords": [],
+  "author": "Ian Moses",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Moses-Ian/tech-blog/issues"
+  },
+  "homepage": "https://github.com/Moses-Ian/tech-blog#readme"
+}
