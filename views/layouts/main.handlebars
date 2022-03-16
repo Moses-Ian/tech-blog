@@ -14,6 +14,9 @@
       <h1>
         <a href="/">Just Tech News</a>
       </h1>
+			{{#if loggedIn}}
+			<p>Welcome, {{username}}!</p>
+			{{/if}}
 			<nav>
 				<a href="/">home</a>
 				<a href="/dashboard">dashboard</a>
