@@ -5,6 +5,7 @@ const withAuth = require('../utils/auth');
 
 router.get('/', withAuth, (req, res) => {
 	console.log(req.session);
+	console.log('dashboard currently doesnt do anything');
 	
 /*   Post.findAll({
     where: {
