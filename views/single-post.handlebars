@@ -1,22 +1,29 @@
-{{> post-info post }}
+<div class="li-post">
+	{{> post-info post }}
+	<hr>
 
-<div>
-{{post.content}}
+	<div class="content">
+	{{post.content}}
+	</div>
+</div>
+	
+<div class="li-post">
+	{{#if loggedIn}}
+	<form class="comment-form">
+		<div class="form-comment">
+			<textarea name="comment-body" class="form-comment-input"></textarea>
+		</div>
+
+		<div>
+			<button type="submit" class="center">add comment</button>
+		</div>
+	</form>
+	{{/if}}
 </div>
 
-{{#if loggedIn}}
-<form class="comment-form">
-  <div>
-    <textarea name="comment-body"></textarea>
-  </div>
-
-  <div>
-    <button type="submit">add comment</button>
-  </div>
-</form>
-{{/if}}
-
-{{> comments post.comments}}
+<div class="li-post">
+	{{> comments post.comments}}
+</div>
 
 {{#if loggedIn}}
 <script src="/js/comment.js"></script>
