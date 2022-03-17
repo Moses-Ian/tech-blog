@@ -64,7 +64,7 @@ ul {
 	padding: 0;
 }
 
-.li-post, .new-post-form, .edit-post-form, .comments {
+.li-post, .new-post-form, .edit-post-form, .comments, .login-form, .signup-form {
 	margin: 10px auto;
 	width: 500px;
 	background-color: white;
@@ -97,6 +97,30 @@ ul {
 
 .text {
 	margin-bottom: 20px;
+}
+
+.login-form, .signup-form {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.labels {
+	flex-basis: 100px;
+}
+
+.inputs {
+	flex-grow: 10;
+	flex-basis: 100px;
+	padding-right: 5px;
+}
+
+.input {
+	width: 100%;
+}
+
+.submit {
+	flex-basis: 100%;
 }
 
 footer {
