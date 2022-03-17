@@ -2,28 +2,28 @@
   <h2>Create New Post</h2>
 
   <form class="new-post-form">
-    <div>
-      <label for="post-title">Title</label>
-      <input type="text" id="post-title" name="post-title" />
+    <div class="form-title">
+      <label for="post-title">Title:</label>
+      <input type="text" id="post-title" name="post-title" class="form-title-input" />
     </div>
-    <div>
-      <textarea id="content" name="content" rows="4" cols="50" ></textarea>
+    <div class="form-content">
+      <textarea id="content" name="content" rows="4" class="form-content-input"></textarea>
     </div>
-    <button type="submit" class="btn">Create</button>
+    <button type="submit" class="btn center">Create</button>
   </form>
 </section>
 
 {{#if posts.length}}
 <section>
   <h2>Your Posts</h2>
-  <ol>
+  <ul>
     {{#each posts as |post|}}
-    <li>
+    <li class="li-post">
       {{> post-info post}}
-      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit post</a>
+      <a href="/dashboard/edit/{{post.id}}" class="edit-link">Edit/Delete post</a>
     </li>
     {{/each}}
-  </ol>
+  </ul>
 </section>
 {{/if}}
 
