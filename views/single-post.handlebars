@@ -7,23 +7,9 @@
 	</div>
 </div>
 	
-<div class="li-post">
-	{{#if loggedIn}}
-	<form class="comment-form">
-		<div class="form-comment">
-			<textarea name="comment-body" class="form-comment-input"></textarea>
-		</div>
+{{> comment-form loggedIn}}
 
-		<div>
-			<button type="submit" class="center">add comment</button>
-		</div>
-	</form>
-	{{/if}}
-</div>
-
-<div class="li-post">
-	{{> comments post.comments}}
-</div>
+{{> comments post.comments}}
 
 {{#if loggedIn}}
 <script src="/js/comment.js"></script>
