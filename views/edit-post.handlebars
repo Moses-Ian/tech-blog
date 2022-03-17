@@ -4,11 +4,14 @@
     Edit Post
   </h2>
   <form class="edit-post-form">
-    <div>
-      <input name="post-title" type="text" value="{{post.title}}" />
-			<textarea name="content" type="text" rows="4" cols="50">{{post.content}}</textarea>
+    <div class="form-title">
+      <label for="post-title">Title:</label>
+      <input name="post-title" type="text" value="{{post.title}}" class="form-title-input" />
     </div>
-    <div>
+    <div class="form-content">
+			<textarea name="content" type="text" rows="4" class="form-content-input">{{post.content}}</textarea>
+    </div>
+    <div class="meta">
       by you on {{format_date post.created_at}}
       |
       <a href="/post/{{post.id}}">{{post.comments.length}} {{format_plural "comment" post.comments.length}}</a>
