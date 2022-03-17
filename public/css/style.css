@@ -1,0 +1,82 @@
+:root {
+	--bg: #ededf6;				/*light blue*/
+}
+
+* {
+	/* border: 1px solid red; */
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: var(--bg);
+	font-family: verdana, "trebuchet ms", arial;
+}
+
+header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 0 50px;
+	background-color: white;
+}
+
+header h1 {
+	margin: 10px 0;
+}
+
+header p {
+	height: fit-content;
+}
+
+button {
+  background-color: white;
+  border: 0;
+  color: black;
+  cursor: pointer;
+	font-family: verdana, "trebuchet ms", arial;
+	font-size: 18px;
+	color: rgb(0, 0, 238);
+	text-decoration: underline;
+}
+
+button:hover {
+  /* background-color: #3486eb; */
+}
+
+ul {
+	list-style: none;
+}
+
+.post {
+	margin: 10px auto;
+	width: 500px;
+	background-color: white;
+	padding: 5px 10px;
+}
+
+.meta, .meta a {
+	color: grey;
+	font-size: 12px;
+	padding-top: 2px;
+}
+
+footer {
+	background-color: white;
+	padding: 20px;
+}
+
+/* media queries */
+@media screen and (max-width: 1200px) {
+}
+
+@media screen and (max-width: 980px) {
+}
+
+@media screen and (max-width: 768px) {
+}
+
+@media screen and (max-width: 576px) {
+}
+
+/* smallest reasonable size: 360px */
